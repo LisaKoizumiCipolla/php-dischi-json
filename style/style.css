@@ -5,15 +5,20 @@
 }
 
 body{
-    margin: 0 auto;
+    height: calc(100vh - 70px);
+    width: 100%;
 }
 
 main{
-    height: calc(100vh - 70px);
+    margin: 0 auto;
 }
 
 .container{
     width: 80%;
+}
+
+.wrapper{
+    width: 88%
 }
 
 .header-colour{
@@ -24,12 +29,34 @@ main{
     background-color: #1d2d3c;
 }
 
-.card-colour{
+.card{
     background-color: #112030;
+    width: calc((100% / 3) - 50px);
+    margin: 20px 0 50px;
+    color: white;
+    padding: 0 40px 30px;
 }
 
 .logo{
     height: 40px;
     width: 40px;
     margin: 15px 0;
+}
+
+.poster{
+    width: 100%;
+    object-fit: contain;
+    padding: 30px 10px;
+}
+
+h1{
+    font-size: 1.35rem;
+}
+
+h2{
+    font-size: 1.1rem;
+}
+
+h3{
+    font-size: 1.25rem;
 }

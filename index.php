@@ -28,12 +28,15 @@
 
         <main class="background-colour">
 
-            <div class="container">
-                <ul>
-                    <li v-for="(disc, index) in discs" >
-                        {{disc}}
-                    </li>
-                </ul>
+            <div class="container d-flex justify-content-center" >
+                <div class="wrapper d-flex justify-content-between flex-wrap">
+                    <div v-for="(disc, index) in discs" class="card d-flex flex-column text-center">
+                        <img :src="disc.poster" class="poster" alt="">
+                        <h1 class="fw-bold">{{ disc.title }}</h1>
+                        <h2>{{ disc.author }}</h2>
+                        <h3 class="fw-bold">{{ disc.year }}</h3>
+                    </div>
+                </div>
             </div>
 
         </main>
