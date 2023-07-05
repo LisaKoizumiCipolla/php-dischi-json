@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;   
 }
+
+body{
+    margin: 0 auto;
+}
+
+main{
+    height: calc(100vh - 70px);
+}
+
+.container{
+    width: 80%;
+}
+
+.header-colour{
+    background-color: #06131f;
+}
+
+.background-colour{
+    background-color: #1d2d3c;
+}
+
+.card-colour{
+    background-color: #112030;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    margin: 15px 0;
+}

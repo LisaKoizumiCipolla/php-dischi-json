@@ -1,7 +1,3 @@
-<?php 
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,17 +17,30 @@
 
 
 <body>
+    <div id="vue">
 
-    <header>
 
-    </header>
+        <header class="header-colour">
+            <div class="container">
+                <img class="logo" src="./logo.png" alt="">
+            </div>
+        </header>
 
-    <main>
-        <div id="app">
+        <main class="background-colour">
 
-        </div>
-    </main>
+            <div class="container">
+                <ul>
+                    <li v-for="(disc, index) in discs" >
+                        {{disc}}
+                    </li>
+                </ul>
+            </div>
+
+        </main>
+
+
+    </div>
     
-<script src="./script/script.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
